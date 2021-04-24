@@ -1,0 +1,12 @@
+BEGIN
+INITIALIZE input
+initalize output
+initialize maxLenght
+Prompt user to enter any word
+calculate
+if input<maxlength
+output+=maxLength
+else
+
+
+END

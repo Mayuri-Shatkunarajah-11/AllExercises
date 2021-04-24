@@ -1,0 +1,60 @@
+html{
+    box-sizing: border-box;
+}
+*,*::after,::before{
+    box-sizing:inherit;
+}
+
+
+
+section{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+    
+}
+section >*{
+    flex-basis:49.5%;
+    min-width: 40;
+}
+/*@media only screen and (min-width:47.5rem){
+section{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+
+
+}
+}*/
+@media all and (min-width:47.3rem){
+    section{
+        flex:1 0 100%;
+        
+    }
+}
+article{
+    
+    background-color: firebrick;
+    margin:2px;
+    width:413.5px;
+    padding:10px;
+}
+
+header{
+    background-color: dodgerblue;
+    padding:10px;
+}
+
+
+section+section{
+    background-color: fuchsia;
+    padding:10px;
+}
+.footer{
+    padding:10px;
+    text-align:center;
+    position:sticky;
+    background-color: aquamarine;
+
+}
+

@@ -1,0 +1,46 @@
+BEGIN
+    INITIALIZE noun as String
+    INITIALIZE verb as string
+    INITIALIZE adj as string
+    INITIALIZE adv as string
+    INITIALIZE template="I am going to-(verb) footbal"
+    INITIALIZE list as array with all the template
+
+    PROMPT "Please enter a noun" as noun
+    PROMPT "Please enter a verb" as verb
+    PROMPT "Please enter an adjective" as adj
+    PROMPT "Please enter an adverb" as adv
+
+    validationProcess 
+    BEGIN WHILE NOUN IS empty
+     noun is empty 
+        Prompt "Verb cannot be empty.Please enter a noun" as errormsg
+    ELSE IF not checkChar(noun)
+        RETURN "Please enter characters only" as errormsg
+    END
+    BEGIN IF verb is empty
+        RETURN "Please enter a verb" as errormsg
+    ELSE IF not checkChar(verb)
+        RETURN "Please enter characters only" as errormsg
+    END
+    BEGIN IF adj is empty
+        RETURN "Please enter an adjective" as errormsg
+    ELSE IF notcheckChar(adj)
+        RETURN "Please enter characters only" as errormsg
+    END
+    BEGIN IF adv is empty
+        RETURN "Please enter an adverb" as errormsg
+    ELSE IF not checkChar(adv)
+        RETURN "Please enter characters only" as errormsg
+    END
+
+    INITIALIZE template to a random template from our list
+    # example template: "I verb adj noun adv."
+    REPLACE in template "noun" with noun 
+    REPLACE in template "verb" with verb
+    REPLACE in template "adj" with adj
+    REPLACE in template "adv" with adv
+
+    PRINT template
+
+END

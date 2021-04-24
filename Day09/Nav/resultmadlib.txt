@@ -1,0 +1,37 @@
+BEGIN
+    INITIALIZE noun as String
+    INITIALIZE verb as string
+    INITIALIZE adj as string
+    INITIALIZE adv as string
+    INITIALIZE template="I am going to-(verb) footbal"
+    INITIALIZE list as array with all the template
+
+    PROMPT "Please enter a noun" as noun
+    PROMPT "Please enter a verb" as verb
+    PROMPT "Please enter an adjective" as adj
+    PROMPT "Please enter an adverb" as adv
+
+    validationProcess 
+    BEGIN WHILE noun IS empty
+     
+        PROMPT "Noun cannot be empty.Please enter a noun" as errormsg
+        END
+        BEGIN WHILE verb IS empty
+     
+        PROMPT "Verb cannot be empty.Please enter a noun" as errormsg
+        END
+        BEGIN WHILE adj IS empty
+     
+        PROMPT "Adj cannot be empty.Please enter a noun" as errormsg
+        END
+        BEGIN WHILE adv IS empty
+     
+        PROMPT "Verb cannot be empty.Please enter a noun" as errormsg
+        END
+        
+        REPLACE (NOUN) in template with noun as template
+        REPLACE (verb) in template with noun as template
+        REPLACE (adj) in template with noun as template
+        REPLACE (adv) in template with noun as template
+        PRINT template
+END

@@ -1,0 +1,25 @@
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20em;
+    
+}
+
+header {
+    background-color: cornflowerblue;
+}
+ul{
+    list-style-type: none;
+    background-color: cornflowerblue;
+}
+li a{
+  text-decoration: none;
+}
+    
+    
+
