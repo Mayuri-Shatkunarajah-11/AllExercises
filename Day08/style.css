@@ -16,6 +16,7 @@ body{
         display:flex;
         justify-content: space-between;
         flex-direction:row;
+        flex-wrap: wrap;
     }
   /*Title of the page*/  
   header span{
@@ -24,32 +25,30 @@ body{
   }
   span img{
       border-radius: 100px;
-      width:100px;
-      height:auto;
-      margin:10px;
+      width:80px;
+      height:80px;
+      margin-top:0;
+      margin-bottom: 0;
+      float:right;
+    margin:10px;
   }
  header h1{
      
     
-    font-size:40px;
+    font-size:45px;
     text-align:left;
     color:white;
-    margin-left: 2px;
+    margin-top:0;
+    margin-bottom:-20px;
+    
+    
 }
 
 header {
-    background-color:goldenrod;
-}
-header +a{
-    
-    padding:10px 20px 10px 20px;
+    background-color:rgb(189, 6, 82);
     border-radius: 10px;
-    border:1px solid white;
-    float:right;
-    margin-right: 10px;
-    margin-top: 20px;
-    
 }
+
 
 nav{
     text-align: center;
@@ -58,7 +57,7 @@ nav{
 header  nav ul li{
     display:inline-block;
     text-align: center;
-    background-color:goldenrod;
+    background-color:rgb(189, 6, 82);
     padding: 0 20px 0 20px;
     margin-top:0 ;
     border-radius: 10px;
@@ -67,17 +66,21 @@ header  nav ul li  a{
     text-decoration:none;
     border-radius: 10px;
     color:white;
+    font-weight:bold;
     padding:5px;
     font-size: 20px;
     border:1px solid white;
 
+
 }
 a:hover{
-    background-color: red;
+    background-color:black;
     border-radius: 5px;
     border:1px solid white;
 }
-
+a:active{
+    background-color:crimson;
+}
 main{
     background-image: url('image/gabriel-baranski-vGICUyYW2CE-unsplash.jpg');
     background-repeat: no-repeat;
@@ -86,23 +89,21 @@ main{
     height:150vh;
     background-position:100%;  
     font-weight:bold;
-   border-radius: 10px;    
+    border-radius: 10px;    
 }
 main h1{
-    background-color: rgba(166, 187, 194, 0.514);
-    color:white;
-    margin:100px;
-    text-align: left;
+    background-color: rgba(29, 150, 206, 0.555);
+    color:rgba(13, 46, 56, 0.938);
+    font-size: 30px;
+    font-family:cursive;
+    font-weight:lighter;
+    padding: 20px;
+    margin:150px;
+    text-align:center;
     line-height: 70px;
-    border-radius: 40px;
-
-    
+    border-radius: 40px;   
 }
-
-
-
-
-/*header section+section{
+     /*header section+section{
     display:flex;
     flex-direction: row;
     justify-content:center;
@@ -115,43 +116,68 @@ header section+section >:nth-child(2){
     flex-basis: 80%;
 }*/
 
-
+/*second main*/
 main+main section{
     display:flex;
-    flex-direction:row nowrap;
+    flex-direction:row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    color:black;
-   
-    
+    color:rgb(65, 61, 61);
+ 
 }
-   
-    
-   main:nth-child(1){
-        color:rgb(58, 51, 51);
-        
-    }
+/*three bottom columns*/
     main section article{
-        background-color: rgba(223, 228, 230, 0.959);
+        flex:1 0 3.5em;
+        background-color: rgba(66, 156, 192, 0.63);
         
-        margin:5px;
-        border-radius: 20px;
-       
+        border-radius: 10px;
+        }
+    main article{
+        display:grid;
+        grid-template-rows:0.3fr 1fr 1fr 0.3fr;
+        margin:10px;
     }
+    /*img inside the article*/
     main img{
       width:80%;
-      height:auto;
-      border-radius: 10px;
+      height:80%;
+      border-radius: 34px;
       align-items: center;
-      margin:10px;
+      margin-top: 10px;
+      margin-left:30px;
+      }
+      /*h3 inside article*/
+    article h3{
+        margin-top: 0;
+   text-align:center;
+   background-color: black;
+   color:grey;
+   padding:10px;
+   border:2px solid rgba(0, 0, 0, 0.555);
+   border-radius: 5px;
 
-    }
-
-footer{
+      }
+    /*a tag inside the article*/
+    main a{
+        
+        padding:10px;
+        margin:10px;
+        background-color: rgba(216, 15, 92, 0.918);
+        border: 2px solid black;
+        border-radius: 10px;
+        color:thistle;
+        text-decoration:none;
+        font-size: 20px;
+        font-weight: bold;
     
-    margin-top:auto;
-    bottom:0;
-    background-color:hsla(hue, saturation, lightness, alpha);
-    color:white;
+    }
+/*footer*/
+footer{
+     margin-bottom:0;
+    background-color:rgba(216, 15, 92, 0.918);
+    border-radius: 5px;
+    color:royalblue;
+    height:20vh;
     font-weight: bold;
     text-align: center;
 }
