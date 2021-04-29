@@ -5,84 +5,6 @@ html{
     box-sizing: inherit;
 }
 body{
-    
-    min-height: 150vh;
-    font-family:Arial, Helvetica, sans-serif;
-    }
-/*Header of the page*/
-    header{
-        display:flex;
-        justify-content: space-between;
-        flex-direction:row;
-    }
-  /*Title of the page*/  
-  header span{
-      display:grid;
-      grid-template-rows:1fr 1fr ;
-  }
-  span img{
-      border-radius: 100px;
-      width:80px;
-      height:80px;
-      margin-top: -10px;
-      margin:5px;
-  }
-  
- header h1{
-     
-    
-    font-size:40px;
-    text-align:left;
-    color:white;
-    margin-left: 2px;
-}
-
-header {
-    background-color:rgb(189, 6, 82);
-}
-header +a{
-    
-    padding:10px 20px 10px 20px;
-    border-radius: 10px;
-    border:1px solid white;
-    float:right;
-    margin-right: 10px;
-    margin-top: 20px;
-    
-}
-
-nav{
-    text-align: center;
-    margin-top: 0px;
-}
-header  nav ul li{
-    display:inline-block;
-    text-align: center;
-    background-color:rgb(189, 6, 82);
-    padding:10px;
-    margin:0;
-    border-radius: 10px;
-}
-header nav ul li a{
-    text-decoration:none;
-    border-radius: 10px;
-    color:white;
-    font-weight:bold;
-    padding:10px;
-    font-size: 20px;
-    border:1px solid white;
-
-
-}
-a:hover{
-    background-color:black;
-    border-radius: 5px;
-    border:1px solid white;
-}
-a:active{
-    background-color:crimson;
-}
-main{
     background-image: url('image/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,24 +12,115 @@ main{
     height:200vh;
     background-position:100%;  
     font-weight:bold;
-    border-radius: 10px;  
+    
+    
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    width:100%
+    }
+/*Header of the page*/
+header{
+    background-color:rgb(189, 6, 82);
+    display:flex;
+    justify-content: space-between;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+/*Title of the page*/  
+header span{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr ;
+}
+span img{
+  border-radius: 100px;
+  width:80px;
+  height:80px;
+  margin-top:0;
+  margin-bottom: 0;
+  float:right;
+margin:10px;
+}
+header h1{
+ 
+
+font-size:45px;
+text-align:left;
+color:white;
+margin-top:0;
+
+
+
+}
+
+
+header nav{
+margin-bottom:-50px;
+}
+
+/*Flex navigation*/
+header nav ul{
+background-color: black;
+text-align: center;  
+display: flex;
+flex-wrap:  wrap;
+justify-content: space-between;
+margin:0;
+padding:0;
+
+}
+header  nav  li{
+
+text-align: center;
+flex:1 0 10em;
+padding:10px;
+margin:5px;
+border-radius: 10px;
+
+}
+header  nav ul li  a{
+text-decoration:none;
+border-radius: 10px;
+color:white;
+
+font-weight:bold;
+padding:10px;
+font-size: 20px;
+}
+ header a:hover{
+background-color:rgb(189, 6, 82);
+border-radius: 5px;
+
+}
+ header a:active{
+background-color:crimson;
+}
+
+main{
+    background-image: url('image/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    background-position:100%;  
+    font-weight:bold;
+    
 }
 main{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-}
-main nav{
     
 
 }
+
 main nav ul  {
     
     list-style-type: none;
     
     padding:0;
     margin:0;
+    margin-left:-10px;
 }
 
     main nav ul li a{
@@ -115,19 +128,20 @@ main nav ul  {
         text-decoration: none;
         color:white;
         padding:15px;
-        margin:8px;
+        margin-left:-10px;
+        margin:15px;
         display:block;
-        border-radius: 10px;
-        border:1px solid white;
-
-
+        border-radius: 5px;
+}
+main a:hover{
+    background-color: black;
 }
 /*grad navigations*/
 main>*:nth-child(1){
 
-    flex:1 0 1%;
+    flex:1 0 2%;
     min-width: 10px;
-
+    margin-left:-20px;
     margin:5px;
     
    
@@ -141,41 +155,52 @@ main>*:nth-child(2){
    padding:10px;   
 }
 main img{
-    width:auto;
-    height:200px
+    width:300px;
+    height:200px;
 }
 article img{
     width:100px;
     height:100px;
+    float:left;
     border-radius: 30px;
     align-items: center;
     margin-top: 10px;
-    margin-left:30px;
+    
     }
 main section{
     display:flex;
     flex-direction: row;
+    margin-left:0;
+    
     flex-wrap: wrap;
 
 }
 main article{
-    display:grid;
-    grid-template-rows: 1fr 1fr 0.3fr;
+    /*display:grid;
+    grid-template-rows:  1fr 1fr 0.3fr;*/
+
     margin:10px;
+    padding:10px;
+    
 }
 section >*{
-    flex:1 0 30%;
+    flex:1 0 40%;
     min-width: 30px;
-    border-radius: 30px;
-    margin-top:20px;}
+    border-radius: 10px;
+    margin-top:20px;
+    position:relative;
+    
+}
    main section a{
         
         padding:10px;
         margin:10px;
-        background-color: rgba(216, 15, 92, 0.918);
+        
         border: 2px solid black;
-        border-radius: 10px;
-        color:thistle;
+        border-radius: 5px;
+        position:absolute;
+        bottom:0;
+        color:rgba(216, 15, 92, 0.918);
         text-decoration:none;
         font-size: 20px;
         font-weight: bold;
@@ -187,34 +212,49 @@ nav{
 article{
     margin:2px;
 
-    background-color: rgba(108, 193, 219, 0.596);
-    box-shadow: rgb(240, 225, 225);
+    background-color: rgba(245, 253, 255, 0.952);
+    box-shadow:  rgb(221, 91, 91);
+    
 }
 main+section{
     display:flex;
     flex-direction: row;
 }
 section nav{
-background-color: rgba(15, 162, 230, 0.404);
+background-color: rgb(250, 254, 255);
+flex:1 1 20em;
 line-height: 30px;
 margin:20px;
+
 }
 section nav ul li {
     list-style-type: none;
+    margin-right: 20px;
   
+}
+section nav li:nth-child(1){
+    background-color: rgba(0, 0, 255, 0.486);
+    padding:30px;
+    margin:-15.8px 0 1px -40px;
+    border-radius: 7px;
+}
+section nav a{
+    color:grey;
+    padding:10px;
+    
 }
 
 
 
 main{
 
-    flex-grow:4;
+    flex-grow:0;
 }
 footer{
 
     margin-bottom:0;
     background-color:rgba(216, 15, 92, 0.918);
-    color:royalblue;
+    color:rgba(0, 0, 0, 0.993);
     
     height:30vh;
     font-weight: bold;

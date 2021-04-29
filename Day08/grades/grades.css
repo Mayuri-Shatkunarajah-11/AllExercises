@@ -38,7 +38,7 @@ body{
 }
 
 header {
-    background-color:rgb(223, 14, 101);
+    background-color:rgb(187, 5, 81);
 }
 header +a{
     
@@ -98,10 +98,7 @@ main{
     flex-wrap: wrap;
 
 }
-main nav{
-    
 
-}
 main nav ul  {
     
     list-style-type: none;
@@ -112,31 +109,37 @@ main nav ul  {
 
     main nav ul li a{
         background-color:rgb(223, 14, 101);
+        
         text-decoration: none;
         color:white;
         padding:20px;
-        margin:8px;
+        margin:7px;
         display:block;
-        border-radius: 10px;
+        margin-left:-5px;
+        border-radius: 8px;
         border:1px solid white;
 
 
 }
 main>*:nth-child(1){
 
-    flex:1 0 1%;
+    flex:1 0 10%;
     min-width: 10px;
-    border:2px solid red;
+    max-height:50em;
     margin:5px;
-    
+   /* border: 2px solid green;*/
    
     
 }
 main>*:nth-child(2){
-    border: 2px solid green;
+    /*border: 2px solid green;*/
     flex: 1 0 60%;
-
-   padding:10px;   
+    padding:10px;   
+}
+main>*:nth-child(3){
+    flex:1 0 10%;
+    max-height: 50em;
+    
 }
 main img{
     width:auto;
@@ -150,33 +153,32 @@ article img{
     margin-top: 10px;
     margin-left:30px;
     }
-main section{
+main section {
     display:flex;
-    flex-direction: row;
+    flex-direction:rows;
     flex-wrap: wrap;
 
 }
-main article{
-    display:grid;
-    grid-template-rows: 1fr 1fr 0.3fr;
-    margin:10px;
+main article img{
+   float:left;
 }
 section >*{
-    flex:1 0 30%;
+    flex:1 0 50%;
     min-width: 30px;
-    border-radius: 30px;
+    border-radius: 5px;
     margin-top:20px;}
    main section a{
-        
         padding:10px;
         margin:10px;
-        background-color: rgba(216, 15, 92, 0.918);
-        border: 2px solid black;
+        
         border-radius: 10px;
-        color:thistle;
+        color:rgb(255, 0, 140);
         text-decoration:none;
         font-size: 20px;
         font-weight: bold;
+}
+main section a:hover{
+    background-color: white;
 }
 nav{
     text-align: center;
@@ -185,22 +187,37 @@ nav{
 article{
     margin:2px;
 
-    background-color: rgba(108, 193, 219, 0.596);
+    background-color: rgba(230, 237, 240, 0.596);
     box-shadow: rgb(240, 225, 225);
+}
+main aside article{
+    padding:10px;
+    border-radius: 2px;
+    margin:2p;
 }
 main section{
     display:flex;
     flex-direction: row;
 
 }
-
-
-
-
+main+section{
+    display:flex;
+    flex-direction: row;
+}
+section nav{
+background-color: rgba(15, 162, 230, 0.404);
+line-height: 30px;
+margin:20px;
+}
+section nav ul li {
+    list-style-type: none;
+  
+}
 main{
 
     flex-grow:4;
 }
+
 footer{
 
     margin-bottom:0;

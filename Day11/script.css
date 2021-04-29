@@ -1,0 +1,54 @@
+*html{
+    box-sizing:border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{
+    text-align:center;
+}
+main{
+    display:flex;
+    flex-direction: column;
+}
+section{
+    display:flex;
+ justify-content: center;
+   flex-wrap: wrap;
+    margin-bottom: 70px;
+  
+}
+
+section a{
+    text-decoration: none;
+    background-color: lawngreen;
+     padding:40px;
+     border:2px solid black;
+     border-collapse:separate;
+
+    
+}
+section a+a{
+    background-color: lightcoral;
+}
+section a+a+a{
+    background-color: lawngreen; 
+}
+section a+a+a+a{
+    background-color: lightcoral;
+}
+section a+a+a+a+a{
+    background-color: lawngreen; 
+}
+ul {
+    display:flex;
+    align-items: center;
+    
+    list-style-type: none;
+    text-align: center;
+}
+ul a{
+    background-color: white;
+    padding:20px;
+
+}

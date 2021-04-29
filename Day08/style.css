@@ -3,25 +3,30 @@ html{
 }
 *,*:after,*before{
     box-sizing: inherit;
+   
 }
 body{
     display:flex;
     flex-direction:column;
-    min-height: 150vh;
+    width:100%;
+    height: 100vh;
     font-family:Arial, Helvetica, sans-serif;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:0;
+    padding:0;
     }
 /*Header of the page*/
     header{
         display:flex;
         justify-content: space-between;
-        flex-direction:row;
+        flex-direction:column;
         flex-wrap: wrap;
     }
   /*Title of the page*/  
   header span{
       display:grid;
-      grid-template-rows:1fr 1fr ;
+      grid-template-columns:1fr 1fr 1fr ;
+      
   }
   span img{
       border-radius: 100px;
@@ -39,69 +44,87 @@ body{
     text-align:left;
     color:white;
     margin-top:0;
-    margin-bottom:-20px;
     
-    
-}
+ }/*Create an account*/
+ header p a{
+     text-align: right;
+     text-decoration: none;
+     margin-right:10px;
+     color:white;
+     font-size: 20px;
+     float:right;
+ }
+
 
 header {
     background-color:rgb(189, 6, 82);
-    border-radius: 10px;
+    
+}
+header nav{
+    margin-bottom:-50px;
 }
 
-
-nav{
-    text-align: center;
-    margin-top: 0px;
+/*Flex navigation*/
+header nav ul{
+   background-color: black;
+   text-align: center;  
+   display: flex;
+   flex-wrap:  wrap;
+   justify-content: space-between;
+  margin:0;
+  padding:0;
+  
 }
-header  nav ul li{
-    display:inline-block;
+header  nav  li{
+    list-style-type: none;
     text-align: center;
-    background-color:rgb(189, 6, 82);
-    padding: 0 20px 0 20px;
-    margin-top:0 ;
+    flex:1 0 10em;
+    padding:10px;
+    margin:5px;
     border-radius: 10px;
+    
 }
 header  nav ul li  a{
     text-decoration:none;
     border-radius: 10px;
     color:white;
+
     font-weight:bold;
-    padding:5px;
+    padding:10px;
     font-size: 20px;
-    border:1px solid white;
-
-
 }
 a:hover{
-    background-color:black;
+    background-color:rgb(218, 14, 99);
+
     border-radius: 5px;
-    border:1px solid white;
+    text-shadow: ghostwhite;
 }
 a:active{
     background-color:crimson;
 }
+
 main{
     background-image: url('image/gabriel-baranski-vGICUyYW2CE-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height:150vh;
-    background-position:100%;  
+    background-position:center;  
     font-weight:bold;
     border-radius: 10px;    
 }
 main h1{
-    background-color: rgba(29, 150, 206, 0.555);
+    background-color: rgba(239, 244, 245, 0.781);
     color:rgba(13, 46, 56, 0.938);
     font-size: 30px;
     font-family:cursive;
     font-weight:lighter;
     padding: 20px;
-    margin:150px;
+    margin:100px;
+    margin-top: 200px;
     text-align:center;
-    line-height: 70px;
-    border-radius: 40px;   
+    line-height: 90px;
+    border-radius: 30px;   
 }
      /*header section+section{
     display:flex;
@@ -128,7 +151,7 @@ main+main section{
 /*three bottom columns*/
     main section article{
         flex:1 0 3.5em;
-        background-color: rgba(66, 156, 192, 0.63);
+        background-color: rgba(247, 248, 248, 0.63);
         
         border-radius: 10px;
         }
@@ -139,8 +162,8 @@ main+main section{
     }
     /*img inside the article*/
     main img{
-      width:80%;
-      height:80%;
+      width:200px;
+      height:200px;
       border-radius: 34px;
       align-items: center;
       margin-top: 10px;
