@@ -1,0 +1,262 @@
+html{
+    box-sizing:border-box;
+}
+*,*:after,*before{
+    box-sizing: inherit;
+   
+}
+body{
+    display:flex;
+    flex-direction:column;
+    
+    width:100%;
+    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:0;
+    padding:0;
+    }
+/*Header of the page*/
+    header{
+        display:flex;
+        justify-content: space-between;
+        flex-direction:column;
+        flex-wrap: wrap;
+    }
+  /*Title of the page*/  
+  header span{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr ;
+      
+  }
+  span img{
+      border-radius: 100px;
+      width:80px;
+      height:80px;
+      margin-top:0;
+      margin-bottom: 0;
+      float:right;
+    margin:10px;
+  }
+ header h1{
+     
+    
+    font-size:45px;
+    text-align:left;
+    color:white;
+    margin-top:0;
+    
+ }/*Create an account*/
+ header p a{
+     text-align: right;
+     text-decoration: none;
+     margin-right:10px;
+     color:white;
+     font-size: 20px;
+     float:right;
+ }
+
+
+header {
+    background-color:rgb(189, 6, 82);
+    
+}
+header nav{
+    margin-bottom:-50px;
+}
+
+/*Flex navigation*/
+header nav ul{
+   background-color: black;
+   text-align: center;  
+   display: flex;
+   flex-wrap:  wrap;
+   justify-content: space-between;
+  margin:0;
+  padding:0;
+  
+}
+header  nav  li{
+    list-style-type: none;
+    text-align: center;
+    flex:1 0 10em;
+    padding:10px;
+    margin:5px;
+    border-radius: 10px;
+    
+}
+header  nav ul li  a{
+    text-decoration:none;
+    border-radius: 10px;
+    color:white;
+
+    font-weight:bold;
+    padding:10px;
+    font-size: 20px;
+}
+a:hover{
+    background-color:rgb(218, 14, 99);
+
+    border-radius: 5px;
+    text-shadow: ghostwhite;
+}
+a:active{
+    background-color:crimson;
+}
+
+main{
+    background-image: url('image/gabriel-baranski-vGICUyYW2CE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:150vh;
+    background-position:center;  
+    font-weight:bold;
+    border-radius: 10px;  
+    
+    z-index: 1;  
+}
+main{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+main nav ul  {
+    
+    list-style-type: none;
+    
+    padding:0;
+    margin:0;
+}
+
+    main nav ul li a{
+        background-color:rgb(223, 14, 101);
+        
+        text-decoration: none;
+        color:white;
+        padding:20px;
+        margin:7px;
+        display:block;
+        margin-left:-5px;
+        border-radius: 8px;
+        border:1px solid white;
+
+
+}
+main>*:nth-child(1){
+
+    flex:1 0 10%;
+    min-width: 10px;
+    max-height:50em;
+    margin:5px;
+   /* border: 2px solid green;*/
+   
+    
+}
+main>*:nth-child(2){
+    /*border: 2px solid green;*/
+    flex: 1 1 60%;
+    padding:10px;   
+}
+main>*:nth-child(3){
+    flex:1 1 10%;
+    max-height: 50em;
+    
+}
+
+article img{
+    width:100px;
+    height:100px;
+    border-radius: 30px;
+    align-items: center;
+    margin-top: 10px;
+    margin-left:30px;
+    }
+main section {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+
+}
+main article img{
+   float:left;
+}
+section >*{
+    flex:1 0 50%;
+    min-width: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top:20px;}
+   main section a{
+        padding:10px;
+        margin:10px;
+        
+        border-radius: 10px;
+        color:rgb(255, 0, 140);
+        text-decoration:none;
+        font-size: 16px;
+        font-weight: bold;
+}
+main section a:hover{
+    background-color: white;
+}
+nav{
+    text-align: center;
+}
+
+article{
+    margin:2px;
+
+    background-color: rgba(230, 237, 240, 0.596);
+    box-shadow: rgb(240, 225, 225);
+
+}
+main aside{
+    margin-top: 10px;;
+}
+main aside article{
+    padding:10px;
+    border-radius: 2px;
+    
+    margin:2px;
+}
+
+main+section{
+    display:grid;
+    grid-template-columns:1fr 1fr ;
+    
+}
+main+section nav{
+background-color: rgba(178, 203, 214, 0.404);
+line-height: 30px;
+margin:20px;
+}
+section nav ul li {
+    list-style-type: none;
+  
+}
+main{
+
+    flex-grow:4;
+}
+
+footer{
+
+    margin-bottom:0;
+    background-color:rgba(216, 15, 92, 0.918);
+    color:royalblue;
+    height:30vh;
+    font-weight: bold;
+    text-align: center;
+}
+footer nav{
+    text-align: center;
+}
+footer nav ul{
+    list-style-type: none;
+}
+footer nav ul li{
+    display:inline-block;
+}

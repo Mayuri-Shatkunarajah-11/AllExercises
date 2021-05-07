@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Hello</h1>
+        <article>
+            <p>Some text here.</p>
+            <a href="http://www.google.com">Google</a>
+        </article>
+    </main>
+​
+    <script>
+        //Assig a variable to each of these elements (h1, p and a)
+        let helloText = document.getElementsByTagName("h1")[0];
+        let someText = document.getElementsByTagName("p");
+        let link = document.getElementsByTagName("a")[0];
+​
+        for (let i = 1; i<3 ; i++){
+            helloText.innerText = helloText.innerText + " " + i;
+            console.log(helloText.innerText)
+            // Hello = Hello 1 - first iteration
+            // Hello 1 = Hello 1 2
+            // Hello 1 2
+        } 
+        
+        //Loop 4 times and add number before
+        for(let i=1; i<5;i = i + 1){
+            someText[0].innerText = i + " " + someText[0].innerText;
+            console.log(someText[0].innerText);
+        }
+​
+        for(let i = 1 ;  i<8 ; i++){
+            
+            link.innerText = i;
+            console.log(link.innerText);
+        }
+​
+    </script>
+​
+</body>
+</html>

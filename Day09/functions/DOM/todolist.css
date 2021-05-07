@@ -1,0 +1,35 @@
+html{
+    box-sizing: border-box;
+
+}
+body{
+   margin:60px; 
+
+
+}
+main{
+    margin:20px;
+    display:none;
+    background-color: cornflowerblue;
+}
+h1{
+    text-align: center;
+}
+ul{
+    margin:20px;
+    background-color: cornsilk;
+}
+ ul li{
+    
+    color:blue;
+    
+    
+}
+.addBtn,.rBtn{
+    margin-top:10px;
+    background-color: rgb(9, 38, 92);
+    padding:15px;
+    color:white;
+    font-weight: bold;
+
+}

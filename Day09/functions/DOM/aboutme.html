@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>About Me</title>
+    <style>
+        .list-item {color:red;}
+        
+      </style>
+  </head>
+  <body>
+    <h1>About Me</h1>
+​
+    <ul>
+      <li class="list-item">Nickname: <span id="nickname"></span></li>
+      <li class="list-item" >Favorites: <span id="favorites"></span></li>
+      <li class="list-item">Hometown: <span id="hometown"></span></li>
+    </ul>
+    <script>
+        
+        //change font style from the page
+        document.body.style.fontFamily = "Arial, sans-serif";
+​
+        //Select elements with speciic id
+        let nickname = document.getElementById("nickname");
+        let favorites = document.getElementById("favorites");
+        let hometown = document.getElementById("hometown");
+        //Add text to the elements selected
+        nickname.style.innerText = "WikiMena";
+        favorites.style.innerText = "La Villa Kebab";
+        hometown.style.innerText = "Valparaiso";
+​
+        //get all li items
+        let liItems = document.getElementsByTagName("li");
+        
+        //loop li items and add class list-item
+        for (let i = 0; i < liItems.length; i++) {
+            liItems[i].classList.add("list-item");
+        }
+​
+        //Append an img tag and use a src with a custom photo
+        var myImage = document.createElement("img");  // Create a <img> node
+        myImage.src = "https://media-exp1.licdn.com/dms/image/C4E03AQETsXgAUXOocg/profile-displayphoto-shrink_800_800/0/1550918348746?e=1625702400&v=beta&t=5bDCeH5YO7bb4btPRq-6hMHesyQvgsy-27FUsOe4r34"
+        document.body.appendChild(myImage);   
+​
+        
+    </script>
+  </body>
+</html>

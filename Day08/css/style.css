@@ -1,0 +1,211 @@
+html{
+    box-sizing:border-box;
+}
+*,*:after,*before{
+    box-sizing: inherit;
+   
+}
+body{
+    display:flex;
+    flex-direction:column;
+    
+    width:100%;
+    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:0;
+    padding:0;
+    }
+/*Header of the page*/
+    header{
+        display:flex;
+        justify-content: space-between;
+        flex-direction:column;
+        flex-wrap: wrap;
+    }
+  /*Title of the page*/  
+  header span{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr ;
+      
+  }
+  span img{
+      border-radius: 100px;
+      width:80px;
+      height:80px;
+      margin-top:0;
+      margin-bottom: 0;
+      float:right;
+    margin:10px;
+  }
+ header h1{
+     
+    
+    font-size:45px;
+    text-align:left;
+    color:white;
+    margin-top:0;
+    
+ }/*Create an account*/
+ header p a{
+     text-align: right;
+     text-decoration: none;
+     margin-right:10px;
+     color:white;
+     font-size: 20px;
+     float:right;
+ }
+
+
+header {
+    background-color:rgb(189, 6, 82);
+    
+}
+header nav{
+    margin-bottom:-50px;
+}
+
+/*Flex navigation*/
+header nav ul{
+   background-color: black;
+   text-align: center;  
+   display: flex;
+   flex-wrap:  wrap;
+   justify-content: space-between;
+  margin:0;
+  padding:0;
+  
+}
+header  nav  li{
+    list-style-type: none;
+    text-align: center;
+    flex:1 0 10em;
+    padding:10px;
+    margin:5px;
+    border-radius: 10px;
+    
+}
+header  nav ul li  a{
+    text-decoration:none;
+    border-radius: 10px;
+    color:white;
+
+    font-weight:bold;
+    padding:10px;
+    font-size: 20px;
+}
+a:hover{
+    background-color:rgb(218, 14, 99);
+
+    border-radius: 5px;
+    text-shadow: ghostwhite;
+}
+a:active{
+    background-color:crimson;
+}
+
+header+main{
+    background-image: url('/image/jason-leung-wmyE5IBiOmo-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*for fixed*/
+    background-attachment: fixed;
+    height:150vh;
+    background-position:center;  
+    font-weight:bold;
+    border-radius: 10px;  
+    
+    z-index: 1;  
+}
+main{
+
+}
+
+main h1{
+    
+    color:white;
+    font-size: 30px;
+    font-family:cursive;
+    font-weight:bold;
+    padding: 20px;
+    margin:100px;
+    margin-top: 20px;
+    text-align:center;
+    line-height: 90px;
+    border-radius: 30px;   
+}
+     
+/*second main*/
+main+main section{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color:rgb(65, 61, 61);
+ 
+}
+/*three bottom columns*/
+    main section article{
+        flex:1 0 3.5em;
+        background-color: rgb(247, 248, 248);
+        padding:10px;
+        border-radius: 10px;
+        }
+    main article{
+        display:grid;
+        grid-template-rows:0.3fr 1fr 1fr 0.3fr;
+        margin:10px;
+    }
+    /*img inside the article*/
+    main img{
+      width:200px;
+      height:200px;
+      border-radius: 34px;
+      align-items: center;
+      margin-top: 10px;
+      margin-left:30px;
+      }
+      /*h3 inside article*/
+    article h3{
+        margin-top: 0;
+   text-align:center;
+   background-color: black;
+   color:grey;
+   padding:10px;
+   border:2px solid rgba(0, 0, 0, 0.555);
+   border-radius: 5px;
+
+      }
+    /*a tag inside the article*/
+    main a{
+        
+        padding:10px;
+        margin:10px;
+        background-color: rgba(216, 15, 92, 0.918);
+        border: 2px solid black;
+        border-radius: 10px;
+        color:thistle;
+        text-decoration:none;
+        font-size: 20px;
+        font-weight: bold;
+    
+    }
+/*footer*/
+footer{
+     margin-bottom:0;
+    background-color:rgba(216, 15, 92, 0.918);
+    border-radius: 5px;
+    color:royalblue;
+    height:20vh;
+    font-weight: bold;
+    text-align: center;
+}
+footer nav{
+    text-align: center;
+}
+footer nav ul{
+    list-style-type: none;
+}
+footer nav ul li{
+    display:inline-block;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="writeInConsole()">
+    <p id="demo"></p>
+    <h1>Hello world
+    </h1>
+    <!--Replacing elements-->
+    <!------------------------------>  
+    <p id="demo5">Some <strong>text</strong>.</p>
+   
+<script>
+     
+  let span = document.createElement("span");
+  let node = document.createTextNode("Added new text");
+  let parent = document.querySelector("#demo5");
+  let strong = parent.querySelector("strong");
+  span.appendChild(node);
+  parent.replaceChild(span, strong);
+</script>     
+    <!--Remove child-->
+    <!------------------------------>
+    <p id="demo3">Some <strong>text</strong>.</p>
+<script>
+  let parent = document.querySelector("#demo3");
+  let child = parent.querySelector("strong");
+  parent.removeChild(child);
+</script>
+    <!--4.Change /append text-->
+      <!------------------------------>
+    <p id="demo2">Some <strong>text</strong>.</p>
+<script>
+  let h1= document.createElement("h1");
+  let node = document.createTextNode("rare new text");
+  let parent = document.querySelector("#demo2");
+  h1.appendChild(node);
+  parent.appendChild(h1);
+</script>
+    <!--3.Change the property style-->
+    <!------------------------------>
+    <p id="demo1">Some text.</p>
+<script>
+  let el = document.querySelector("#demo1");
+  el.style.color="#6600FF";
+  el.style.width="500px";
+  el.style.backgroundColor="red";
+</script>
+    <!--2.Image-->
+    <!------------------------------>
+    <img src="g.jpg" id="myimg">
+<script>
+  let el = document.querySelector("#myimg");
+  el.src="gr.jpg";
+  el.className="landscape";
+</script>
+<!--1Print child array-->
+<!------------------------------>
+   <script>
+       let elm = document.getElementById("demo");
+let arr = elm.childNodes;
+arr.forEach(function(el){
+  el.textContent = "new text";
+}); 
+//
+let arr = document.querySelectorAll("#demo > *");
+arr.forEach(function(el){
+  el.textContent = "new text";
+ 
+}); 
+   </script> 
+   <h2>hiiiiii</h2>
+   <p id="demo4" >hi<i>Hello</i>checking </p>
+   <script>
+       let parent1=document.querySelector("#demo4");
+       let child1=parent1.querySelector("i");
+       parent1.removeChild(child1);
+       
+       var h2 = querySelector("h2");
+h2.onclick = function() { writeIntoConsole() };
+
+function writeIntoConsole(){
+  console.log(writeIntoConsole);
+  alert("Open console!");
+}
+   </script>
+
+</body>
+</html>

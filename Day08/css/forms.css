@@ -174,7 +174,26 @@ main a:link{
 main a:visited{
 	background-color: turquoise;
 }
+footer{
 
+    margin-bottom:0;
+    background-color:rgba(216, 15, 92, 0.918);
+    color:rgba(0, 0, 0, 0.993);
+    
+    height:30vh;
+    font-weight: bold;
+    text-align: center;
+}
+footer nav{
+    padding:10px;
+    text-align: center;
+}
+footer nav ul{
+    list-style-type: none;
+}
+footer nav ul li{
+    display:inline-block;
+}
 
 
 
