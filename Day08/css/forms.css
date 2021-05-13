@@ -51,7 +51,7 @@ body{
 
 
 header {
-    background-color:rgb(228, 59, 29);
+    background-color:#de750a;
     border-radius: 10px;
 }
 header a{
@@ -92,13 +92,13 @@ header  nav ul li  a{
     font-size: 20px;
 }
 header a:hover{
-    background-color:rgb(189, 6, 82);
+    background-color:rgb(189, 73, 6);
     padding:10px;
     border-radius: 5px;
     text-shadow: ghostwhite;
 }
 header a:active{
-    background-color:crimson;
+    background-color:rgb(220, 20, 30);
 }
 
 main{
@@ -107,7 +107,7 @@ main{
 	padding: 1em;
 	display: flex;
 	flex-flow: row wrap;
-	background-color: rgb(217, 235, 238);
+	background-color: rgb(255, 255, 255);
 
 }
 fieldset{
@@ -133,21 +133,24 @@ section {
 	
 	border-radius: 20px;
 }
+section h1{
+    font-size: 40px;
+}
 section+aside {
 	margin-top: 100px;
 	flex:1 0 20%;
 }
 button{
 	border-radius: 20px;
-	background-color: rgb(69, 37, 158);
+	background-color: rgb(184, 60, 11);
 	color:white;
 	font-size: 20px;
 	padding:10px 40px;
 }
 button:hover{
-	background-color: rgb(236, 144, 236);
+	background-color: rgb(248, 134, 41);
 	color:black;
-	transform: scale(1.2);
+	transform: scale(1.0);
 }
 textarea {
 	height: 10rem;
@@ -169,18 +172,18 @@ input:not([type="radio"]):not([type="checkbox"]),textarea {
     
 }
 main a:hover{
-	background-color: yellow;
+	background-color: rgb(255, 115, 0);
 }
 main a:link{
-	background-color: violet;
+	background-color: rgb(231, 58, 101);
 }
 main a:visited{
-	background-color: turquoise;
+	background-color: rgb(50, 53, 58);
 }
 footer{
 
     margin-bottom:0;
-    background-color:rgb(228, 59, 29);
+    background-color:#de750a;
     color:rgba(0, 0, 0, 0.993);
     height:20vh;
     font-weight: bold;
