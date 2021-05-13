@@ -1,9 +1,14 @@
+body{
+	
+}
+
 h1 {
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 }
 
 .robots {
+display:flex;
 }
 
 .head, 
@@ -24,7 +29,7 @@ h1 {
 } 
 
 .eyes {
-	
+display:flex;
 }
 
 .head:hover {
@@ -63,6 +68,7 @@ h1 {
 	height: 200px;
 	/* This is another useful property. Hmm what do you think it does?*/
 	margin: 0 auto;
+  display:inline-block;
 
 } 
 
@@ -70,10 +76,11 @@ h1 {
 	width: 40px; 
 	height: 120px;
 	border-radius: 0 0 100px 100px; 
+
 } 
 
 .left_leg { 
-	margin-left: 45px; 
+	margin-left: 93px; 
 } 
 
 .left_leg:hover {
@@ -85,7 +92,15 @@ h1 {
 }
 
 .right_leg { 
-	margin-left: 30px; 
+	margin-left:156px; 
+
+  margin-top:-122px;
+  
+
+}
+.right_leg:hover{
+transform:rotate(-20deg);
+
 }
 
 .left_eye, .right_eye { 
@@ -108,8 +123,3 @@ h1 {
 	top: 100px; 
 	left: 120px; 
 }
-
-
-
-
-

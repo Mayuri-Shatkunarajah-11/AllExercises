@@ -21,7 +21,7 @@ body{
     }
 /*Header of the page*/
 header{
-    background-color:rgb(189, 6, 82);
+    background-color:rgb(228, 59, 29);
     display:flex;
     justify-content: space-between;
     flex-direction:column;
@@ -45,6 +45,7 @@ span a{
     float:right;
     color:white;
     text-decoration: none;
+    margin-top:50px;
 }
 header h1{
  
@@ -52,7 +53,7 @@ header h1{
 font-size:45px;
 text-align:left;
 color:white;
-margin-top:0;
+margin-top:20px;
 
 
 
@@ -135,7 +136,7 @@ main section{
 main section article{
     margin:10px;
     background-image:linear-gradient(to right,white,rgb(216, 231, 236));
-    ba
+
 }
 main section article p{
     margin-top: 30px;
@@ -148,7 +149,7 @@ main section article h3{
 footer{
 
     margin-bottom:0;
-    background-color:rgba(216, 15, 92, 0.918);
+    background-color:rgb(228, 59, 29);
     color:rgba(0, 0, 0, 0.993);
     
     height:30vh;

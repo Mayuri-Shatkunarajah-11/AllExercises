@@ -47,8 +47,10 @@ header{
 }
 header h1{
     font-size: 30px;
-    color:rgb(189, 8, 23);
-    text-decoration-style: wavy;
+    color:white;
+    font-family: 'Lobster', 'cursive';
+    letter-spacing: 2px;
+    margin-top:10px;
 }
 header span{
     color:white;
@@ -67,7 +69,8 @@ header nav ul{
 header nav ul li{
     margin:20px;
     flex:1 1 auto;
-    margin-top:-10px;
+    margin-top:10px;
+    margin-bottom: 3px;
     font-size:17.3px;
     padding:5px;
 }
@@ -75,13 +78,15 @@ header a{
     color:white;
     text-decoration: none;
     font-weight: bold;
-    font-family: 'Satisfy', cursive;
+    letter-spacing: 2px;
+    font-family: 'Lobster', cursive;
     position:relative;
 
 }
 header a::after{
 content:"";
 position:absolute;
+color:white;
 left:0;
 bottom:0;
 width:100%;
@@ -92,70 +97,202 @@ transform-origin:right;
 transition:transform 250ms ease-in;
 
 }
+header a:hover{
+    color:white;
+}
 header a:hover::after{
 transform:scaleX(1);
 transform-origin:left;
-}
-main section{
-    
-    background-color:rgb(255, 255, 255);
-    margin-left:-30px;
-    margin:100px;
-    display:block;
-    padding:20px;
-      
-      
-  }
-  main section h1{
-      color:black;
-  }
-  main section address{
-      padding:30px;
-    
-      
-      color:rgb(38, 93, 212);
-  }
-main div{
-    border-radius: 20px;
-    margin-top: 10px;
-    margin-left:5px;
-    margin-right:30em; 
-}
-div~section{
-    
-}
+color:white
 
-main  section{
+}
+/*contact details and image*/
+  main  section{
     background-image: linear-gradient(to bottom,rgb(253, 253, 253) ,rgb(253, 253, 253));
     border-radius: 20px;
     margin-top: 10px;
-    text-align: center;
-    padding:20px;
+    margin:20px;
+    padding:10px;
     
     display:flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     
 }
+/* heading*/
+main  h1{
+    font-family: 'Kaushan Script', cursive;
+    background-color:white;
+    border:5px solid rgb(6, 86, 177);
+    padding:15px;
+    text-align: center;
+    margin:0;
+  }
+  main section address{
+      padding:30px;
+    text-align: left;    
+    font-style: italic;
+  }
+  main section blockquote{
+margin-left: 52px;
+  }
+  main section img{
+      width:500px;
+      height:auto;
+  }
+  /*Contact form section .For eliminate problem iadded div tag*/
+main+div{
+    background: linear-gradient(to right,rgba(2, 2, 90, 0.5),rgba(233, 233, 236, 0.171)),url('../image/elena-putina-GikotQ_Gkzw-unsplash.jpg');
+    background-size: cover;
+    background-position:center ;
+  
+}
+div{
+    width:700px;
+    
+    margin:0 auto;
+    border:1px solid black;
+    margin-bottom:90px;
+    
+    
+}
+/*heading*/
+div h2{
+    font-family: 'Kaushan Script', cursive;
+    color:red;
+    padding:15px;
+    text-align: center;
+    font-size:45px;
+    margin:0;
+  }
+  /**/
 
+  .form input{
+      width:200px;
+      padding:10px;
+      color:#666;
+      outline: none;
+      font-size:16px;
+      margin-left:50px;
+      border-radius: 12px;
+    
+  }
+   /**/
+  #e input{
+    margin-left:57px;
+  }
+   /*input radio class */
+  .gender input{
+      width:50px;
+      margin-left:40px;
+      
+  }
+  .gender{
+    margin:20px;
+    font-size: 20px;
+    color:white;
+    margin-right:40px;
 
+  }
+   /*for location select options*/
+  .location{
+    margin:30px;
+    font-size: 20px;
+    color:white;
+  }
+ /*Labels for the input*/
+label{
+    margin:30px;
+    font-size: 20px;
+    color:white;
+}
+ /*password id*/
+#p label{
+    margin-left:7px;
+}
+#p input{
+    margin-left:15px;
+}
+/*text area*/
+.msg textarea{
+margin-left:120px;
+border-radius: 10px;
+}
+.location select{
+    width:200px;
+    padding:10px;
+    margin-left:110px;
+    border-radius: 12px;
+}
+.location label{
+    margin-left:50px;
+} /*submit input*/
+.sub input{
+    width:100px;
+    padding:10px;
+    background-color: crimson;
+    color:white;
+    font-weight: bold;
+    margin:20px;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+.sub input:hover{
+    background-color: coral;
+
+}
+ /*form width*/
+form{
+    width:100%;
+    margin-top:50px;
+    transition:all 4s ease-in-out;
+     
+    }
+form p{
+ margin:4px;
+}
+script+a{
+    font-size: 25px;
+}
+.nexticons i{
+    font-size: 40px;
+    float :left;
+}
+ /*footer section*/
 footer{
     background-color: black;
    color:white;
    
-   padding-left:50px;
+   
  }
+
+ footer a i{
+ 
+    padding:11px;
+    background-color: rgb(8, 57, 112);
+    border-radius: 50px;
+    
+    
+}
+footer a i:hover{
+    background-color: white;
+     border:1px solid rgb(49, 119, 199);
+     transition:.8s linear;
+     color:rgb(8, 57, 112);
+}
  footer ul{
      list-style-type: none;
      display:flex;
-    
-     flex-wrap: wrap;
-     justify-content: center;
+     flex-direction: row;
+     
+     justify-content:center;
  
  }
  footer li{
+    margin:20px;
  
- flex:1 1 auto;
  }
  footer  a{
      text-decoration: none;

@@ -39,15 +39,16 @@ flex-wrap: wrap;
 header{
     display:flex;
      flex-direction: row;
-     justify-content: space-aroound;
+     justify-content: space-around;
     background-color: rgb(8, 0, 1);
     color:white;
 
 }
 header h1{
     font-size: 30px;
-    color:rgb(189, 8, 23);
-    text-decoration-style: wavy;
+    color:white;
+    font-family: 'Lobster', 'cursive';
+    letter-spacing: 2px;
 }
 header span{
     color:white;
@@ -56,7 +57,7 @@ header span{
 }
 header nav ul{
     display:flex;
-    flex-direction: column wrap;
+    flex-direction: wrap;
     justify-content: space-around;
     
     list-style-type: none;
@@ -64,15 +65,18 @@ header nav ul{
 }
 header nav ul li{
     margin:20px;
-    margin-top:-10px;
+    flex:1 1 auto;
     font-size:17.3px;
     padding:5px;
+    margin-top:2px;
+    margin-bottom: 3px;
 }
 header a{
     color:white;
     text-decoration: none;
     font-weight: bold;
-    font-family: 'Satisfy', cursive;
+    letter-spacing: 2px;
+    font-family: 'Lobster', cursive;
     position:relative;
 
 }
@@ -93,33 +97,39 @@ header a:hover::after{
 transform:scaleX(1);
 transform-origin:left;
 }
-
+/*First section's header 1 */
 main >*:nth-child(1)  h1{
+    font-family: 'Kaushan Script', cursive;
+    background-color:white;
+    border:5px solid rgb(6, 86, 177);
+    padding:15px;
     font-size: 40px;
-    color:rgb(158, 9, 9);
-    font-family: cursive;
-    font-weight: 600px;   
+    margin:0;
 }
+/*image*/
 main section article img{
-    width:300px;
-    height:300px;
-    border-radius:150px;
+    width:400px;
+    height:400px;
+    border-radius:200px;
 }
+/*First section */
   main >*:nth-child(1) article p{
      
-     font-size: 20px;
-     color:black;
+     font-size: 30px;
+     color:rgb(97, 93, 93);
      background-color: rgba(255, 255, 255, 0.397);
      box-shadow: 0px 8px 16px 0px rgba(59, 57, 57, 0.555);
-     font-family: 'Abril Fatface', cursive;
+     font-family: 'Niconne', cursive;
      opacity:0.5px;
      font-weight: bold;
-     margin:200px;
-     margin-top:-10px;
+     margin:180px;
+     margin-top:4px;
+     letter-spacing: 1px;
      line-height: 50px;
-     padding:20px;
-    margin-bottom: -20px;
+     padding:30px;
+    margin-bottom: -10px;
  }
+ /*second section inside the main tag*/
  main>*:nth-child(2){
      display:flex;
      flex-direction: column wrap;
@@ -133,30 +143,51 @@ main section article img{
      font-size: 20px;
      margin:20px;
      color:rgb(41, 34, 34);
-     padding:10px;
-     border-radius: 10px;
+     padding:15px;
+     margin-top:30px;
      position:relative;
-     border: 1px solid rgb(189, 207, 189);
+     box-shadow: 0px 8px 11px 0px rgba(59, 57, 57, 0.555);
  }
+
+ main>*:nth-child(2) article p{
+    
+    line-height: 28px;
+   text-align: left;
+   font-weight: 7px;
+   font-size: 18px;
+   color:black;
+ }
+  /*second section first article*/
  section+section>*:nth-child(1){
      
    flex:1 1 auto;
      
  }
+  /*second section second article*/
  section+section>*:nth-child(2){
   
     flex:1 1 auto;
      
     
 }
+ /*second section third article*/
 section+section>*:nth-child(3){
     flex:1 1 auto;
      
     
     
 }
-main >*:nth-child(2) h2{
- text-shadow:2px 2px rgb(0, 162, 255);
+ /*second section header 3*/
+main >*:nth-child(2) h3{
+    font-family: 'Kaushan Script', cursive;
+    color:rgb(7, 101, 145);
+}
+main >*:nth-child(2) i{
+    background-image:linear-gradient(to bottom, #f3f3f3,rgba(247, 242, 242, 0.842));
+    padding:30px;
+    border-radius:100px;
+
+
 }
 main >*:nth-child(2) a{
     text-decoration: none;
@@ -165,20 +196,70 @@ main >*:nth-child(2) a{
     
     bottom: 0;
 }
- 
+ /*division tag after the two sections inside the main tag*/
+div h1{
+    color:rgb(7, 101, 145);
+    font-family: 'Kaushan Script', cursive;
+}
+ /*Table inside the div tag*/
+section+div table,th, td{
+     border: 1px solid darkblue;
+     margin:0 auto;
+     border-collapse: collapse;
+     padding:20px;
+ }
+section+div a{
+     font-size: 30px;
+     float:right;
+     margin-right:20px;
+     margin:20px;
+     text-decoration: none;
+ }
+ table{
+     font-size: 20px;
+    
+ }
+ .previcons i{
+    float:left;
+    font-size: 40px;
+    margin:10px;
+}
+.previcons+a{
+    font-size: 20px;
+}
+.nexticons i{
+    font-size: 40px;
+    float :right;
+    margin:10px;
+}
+  /*footer*/
 footer{
     background-color: black;
    color:white;
  }
+ footer a i{
+ 
+    padding:11px;
+    background-color: rgb(8, 57, 112);
+    border-radius: 50px;
+    
+}
+footer a i:hover{
+    background-color: white;
+     border:1px solid rgb(49, 119, 199);
+     transition:.8s linear;
+     color:rgb(8, 57, 112);
+}
+
  footer ul{
      list-style-type: none;
      display:flex;
-     flex-direction: rows;
+     flex-direction: row;
      justify-content: center;
  
  }
  footer li{
- margin:20px;
+ margin:40px;
  }
  footer  a{
      text-decoration: none;

@@ -51,8 +51,11 @@ body{
 
 
 header {
-    background-color:rgb(189, 6, 82);
+    background-color:rgb(228, 59, 29);
     border-radius: 10px;
+}
+header a{
+    color:white;
 }
 header nav{
     margin-bottom:-50px;
@@ -126,17 +129,17 @@ legend{
 }
 
 section {
-	flex-basis: 57%;
-	margin-right: 10%;
+	flex:1 0 50%;
+	
 	border-radius: 20px;
 }
-aside {
+section+aside {
 	margin-top: 100px;
-	flex-basis: 30%;
+	flex:1 0 20%;
 }
 button{
 	border-radius: 20px;
-	background-color: rgb(137, 76, 235);
+	background-color: rgb(69, 37, 158);
 	color:white;
 	font-size: 20px;
 	padding:10px 40px;
@@ -177,10 +180,9 @@ main a:visited{
 footer{
 
     margin-bottom:0;
-    background-color:rgba(216, 15, 92, 0.918);
+    background-color:rgb(228, 59, 29);
     color:rgba(0, 0, 0, 0.993);
-    
-    height:30vh;
+    height:20vh;
     font-weight: bold;
     text-align: center;
 }

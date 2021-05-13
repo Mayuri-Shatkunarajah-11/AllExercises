@@ -38,13 +38,17 @@ body{
       float:right;
     margin:10px;
   }
+span p a{
+    color:white;
+    margin-top:50px;
+}
  header h1{
      
     
     font-size:45px;
     text-align:left;
     color:white;
-    margin-top:0;
+    margin-top:20px;
     
  }/*Create an account*/
  header p a{
@@ -58,7 +62,7 @@ body{
 
 
 header {
-    background-color:rgb(189, 6, 82);
+    background-color:rgb(228, 59, 29);
     
 }
 header nav{
@@ -132,7 +136,7 @@ main nav ul  {
 }
 
     main nav ul li a{
-        background-color:rgb(223, 14, 101);
+        background-color:rgb(228, 59, 29);
         
         text-decoration: none;
         color:white;
@@ -157,8 +161,12 @@ main>*:nth-child(1){
 }
 main>*:nth-child(2){
     /*border: 2px solid green;*/
+    overflow: scroll;
     flex: 1 1 60%;
     padding:10px;   
+}
+main >*:nth-child(2) article{
+
 }
 main>*:nth-child(3){
     flex:1 1 10%;

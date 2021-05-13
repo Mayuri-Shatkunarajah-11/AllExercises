@@ -37,6 +37,7 @@ display:flex;
 flex-direction: column;
 flex-wrap: wrap;
 }
+/*header style*/
 header{
     display:flex;
      flex-direction: row;
@@ -47,8 +48,9 @@ header{
 }
 header h1{
     font-size: 30px;
-    color:rgb(189, 8, 23);
-    text-decoration-style: wavy;
+    color:white;
+    font-family: 'Lobster', 'cursive';
+    letter-spacing: 2px;
 }
 header span{
     color:white;
@@ -66,7 +68,8 @@ header nav ul{
 header nav ul li{
     margin:20px;
     flex:1 1 auto;
-    margin-top:-10px;
+    margin-top:2px;
+    margin-bottom: 3px;
     font-size:17.3px;
     padding:5px;
 }
@@ -74,7 +77,8 @@ header a{
     color:white;
     text-decoration: none;
     font-weight: bold;
-    font-family: 'Satisfy', cursive;
+    letter-spacing: 2px;
+    font-family: 'Lobster', cursive;
     position:relative;
 
 }
@@ -95,39 +99,79 @@ header a:hover::after{
 transform:scaleX(1);
 transform-origin:left;
 }
-
-
-   
- section >article{
+/* section's article  inside the main*/
+section >article{
     background-color: rgb(241, 237, 241);
     position:relative;
     box-shadow: 0px 8px 16px 0px rgba(59, 57, 57, 0.555);
+    font-size: 20px;
     padding:10px;
     height:auto;
-    overflow:hidden;
+
  }
+ /*heading inside the main*/
 main h1{
-    border:5px solid rgb(5, 127, 143);
-    padding:20px;
+    border:5px solid rgb(6, 86, 177);
+    font-family: 'Kaushan Script', cursive;
+    padding:15px;
+    margin:0;
 }
-
+/*first section*/
+main section{
+    margin:20px;
+}
+main article h2{
+    color:rgb(6, 86, 177);
+}
+/* second section' class .I styled this section by using class learn */
+.learn{
+    
  
-
-h1+section{
+    padding:15px;
+    background-color: white;
+    margin-top:70px;
+}
+ 
+/*first section */
+ main h1+section{
     display:grid;
-    grid-template-columns:1fr 1fr ;
+    grid-template-rows:1fr 1fr ;
     grid-gap:20px;
+  
 }
-section+section{
+/*Third section.I styled this section by using class learnblog */
+ .learnblog{
     display:grid;
-    grid-template-columns:1fr 1fr ;
+    grid-template-columns:1fr 1fr  1fr 1fr;
+    font-size: 30px;
 }
+.learnblog h2{
+    color:rgb(6, 86, 177);
+}
+/*image after the header 2*/
+h2~img{
+    width:400px;
+    height:auto;
+    border-radius: 20px;
+}
+.learnblog i{
+    color:rgb(6, 86, 177);
+    font-size: 40px;
+    padding:25px;
+    background-color: rgb(241, 237, 241);
+    border-radius: 100px;
+    
+   
 
+}
+/*second section */
 section+section>article{
     background-color: rgb(255, 255, 255);
+ 
+    
 }
 
-
+/*a tag after the paragrapgh tag*/
 p~a{
     color:rgb(34, 124, 165);
     padding:10px;
@@ -137,17 +181,50 @@ p~a{
     position:absolute;
     bottom:0;
 }
+/*media query for responsive page*/
 @media screen and (max-width:500px){
-    h1+section,section+section{
+    h1+section{
+        display:grid;
+        grid-template-columns: auto auto auto;
+    }
+    section+section{
         display:grid;
         grid-template-columns: auto auto auto;
     }
 }
+.previcons i{
+    float:left;
+    font-size: 40px;
+    margin:10px;
+}
+.previcons+a{
+    font-size: 20px;
+}
+.nexticons i{
+    font-size: 40px;
+    float :right;
+    margin:10px;
+}
+/*footer*/
 footer{
     background-color: black;
    color:white;
    
  }
+ footer a i{
+ 
+    padding:11px;
+    background-color: rgb(8, 57, 112);
+    border-radius: 50px;
+    
+}
+footer a i:hover{
+    background-color: white;
+     border:1px solid rgb(49, 119, 199);
+     transition:.8s linear;
+     color:rgb(8, 57, 112);
+}
+
  footer ul{
      list-style-type: none;
      display:flex;

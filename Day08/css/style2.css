@@ -5,10 +5,7 @@ html{
     box-sizing: inherit;
 }
 body{
-    background-image: url('image/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  
     height:200vh;
     background-position:100%;  
     font-weight:bold;
@@ -21,7 +18,7 @@ body{
     }
 /*Header of the page*/
 header{
-    background-color:rgb(189, 6, 82);
+    background-color:rgb(228, 59, 29);
     display:flex;
     justify-content: space-between;
     flex-direction:column;
@@ -44,15 +41,18 @@ margin:10px;
 span a{
     float:right;
     color:white;
+    margin-top:50px;
     text-decoration: none;
+    margin-right:10px;
 }
 header h1{
  
     font-family: 'Open Sans', sans-serif;
 font-size:45px;
 text-align:left;
+margin-top:20px;
 color:white;
-margin-top:0;
+
 
 
 
@@ -65,7 +65,7 @@ margin-bottom:-50px;
 
 /*Flex navigation*/
 header nav ul{
-background-color: black;
+background-color: rgb(37, 35, 35);
 text-align: center;  
 display: flex;
 flex-wrap:  wrap;
@@ -81,6 +81,7 @@ flex:1 0 10em;
 padding:10px;
 margin:5px;
 border-radius: 10px;
+list-style-type: none;
 
 }
 header  nav ul li  a{
@@ -93,7 +94,8 @@ padding:10px;
 font-size: 20px;
 }
  header a:hover{
-background-color:rgb(189, 6, 82);
+background-color:white;
+color:orangered;
 border-radius: 5px;
 
 }
@@ -102,12 +104,7 @@ background-color:crimson;
 }
 
 main{
-    background-image: url('../image/georgy-rudakov-khLn511GlLs-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    
-    background-position:100%;  
+
     font-weight:bold;
     
 }
@@ -129,7 +126,7 @@ main nav ul  {
 }
 
     main nav ul li a{
-        background-color:rgb(223, 14, 101);
+        background-color:rgb(228, 59, 29);
         text-decoration: none;
         color:white;
         padding:15px;
@@ -173,6 +170,7 @@ article img{
     width:100px;
     height:100px;
     float:left;
+    margin:10px;
     border-radius: 30px;
     align-items: center;
     margin-top: 10px;
@@ -189,11 +187,12 @@ main section{
 main article{
     /*display:grid;
     grid-template-rows:  1fr 1fr 0.3fr;*/
-
+    
     margin:10px;
     padding:10px;
     
 }
+
 section >*{
     flex:1 1 40%;
     min-width: 30px;
@@ -228,7 +227,7 @@ article{
     
 }
 article h4{
-    background-image:linear-gradient(to right,black,white) ;
+    border:1px solid black;
     padding:20px;
     margin-top:0;
     text-align:center;
@@ -271,7 +270,7 @@ main{
 footer{
 
     margin-bottom:0;
-    background-color:rgba(216, 15, 92, 0.918);
+    background-color:rgb(228, 59, 29);
     color:rgba(0, 0, 0, 0.993);
     
     height:30vh;

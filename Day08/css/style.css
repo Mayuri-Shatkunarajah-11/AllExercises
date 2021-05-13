@@ -58,7 +58,7 @@ body{
 
 
 header {
-    background-color:rgb(189, 6, 82);
+    background-color:rgb(228, 59, 29);
     
 }
 header nav{
@@ -193,7 +193,7 @@ main+main section{
 /*footer*/
 footer{
      margin-bottom:0;
-    background-color:rgba(216, 15, 92, 0.918);
+    background-color:rgb(228, 59, 29);
     border-radius: 5px;
     color:royalblue;
     height:20vh;
