@@ -21,7 +21,7 @@ body{
     }
 /*Header of the page*/
 header{
-    background-color:rgb(228, 59, 29);
+    background-color:#de750a;
     display:flex;
     justify-content: space-between;
     flex-direction:column;
@@ -94,7 +94,7 @@ padding:10px;
 font-size: 20px;
 }
  header a:hover{
-background-color:rgb(189, 6, 82);
+background-color:rgb(189, 58, 6);
 border-radius: 5px;
 
 }
@@ -142,14 +142,14 @@ main section article p{
     margin-top: 30px;
 }
 main section article h3{
-    text-shadow: 2px red;
+    text-shadow: 2px rgb(223, 37, 37);
     text-align: center;
 }
 
 footer{
 
     margin-bottom:0;
-    background-color:rgb(228, 59, 29);
+    background-color:#de750a;
     color:rgba(0, 0, 0, 0.993);
     
     height:30vh;

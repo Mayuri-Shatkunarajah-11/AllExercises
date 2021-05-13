@@ -62,7 +62,7 @@ span p a{
 
 
 header {
-    background-color:rgb(228, 59, 29);
+    background-color:#de750a;
     
 }
 header nav{
@@ -99,7 +99,7 @@ header  nav ul li  a{
     font-size: 20px;
 }
 a:hover{
-    background-color:rgb(218, 14, 99);
+    background-color:rgb(218, 62, 14);
 
     border-radius: 5px;
     text-shadow: ghostwhite;
@@ -136,7 +136,7 @@ main nav ul  {
 }
 
     main nav ul li a{
-        background-color:rgb(228, 59, 29);
+        background-color:#de750a;
         
         text-decoration: none;
         color:white;
@@ -165,9 +165,7 @@ main>*:nth-child(2){
     flex: 1 1 60%;
     padding:10px;   
 }
-main >*:nth-child(2) article{
 
-}
 main>*:nth-child(3){
     flex:1 1 10%;
     max-height: 50em;
@@ -202,7 +200,7 @@ section >*{
         margin:10px;
         
         border-radius: 10px;
-        color:rgb(255, 0, 140);
+        color:rgb(255, 0, 55);
         text-decoration:none;
         font-size: 16px;
         font-weight: bold;
@@ -253,7 +251,7 @@ main{
 footer{
 
     margin-bottom:0;
-    background-color:rgba(216, 15, 92, 0.918);
+    background-color:#de750a;
     color:royalblue;
     height:30vh;
     font-weight: bold;

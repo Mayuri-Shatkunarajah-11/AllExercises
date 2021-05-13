@@ -18,7 +18,7 @@ body{
     }
 /*Header of the page*/
 header{
-    background-color:rgb(228, 59, 29);
+    background-color:#de750a;
     display:flex;
     justify-content: space-between;
     flex-direction:column;
@@ -126,7 +126,7 @@ main nav ul  {
 }
 
     main nav ul li a{
-        background-color:rgb(228, 59, 29);
+        background-color:#de750a;
         text-decoration: none;
         color:white;
         padding:15px;
@@ -270,7 +270,7 @@ main{
 footer{
 
     margin-bottom:0;
-    background-color:rgb(228, 59, 29);
+    background-color:#de750a;
     color:rgba(0, 0, 0, 0.993);
     
     height:30vh;

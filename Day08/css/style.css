@@ -58,7 +58,7 @@ body{
 
 
 header {
-    background-color:rgb(228, 59, 29);
+    background-color:#de750a;
     
 }
 header nav{
@@ -95,7 +95,7 @@ header  nav ul li  a{
     font-size: 20px;
 }
 a:hover{
-    background-color:rgb(218, 14, 99);
+    background-color:rgb(204, 76, 37);
 
     border-radius: 5px;
     text-shadow: ghostwhite;
@@ -117,9 +117,7 @@ header+main{
     
     z-index: 1;  
 }
-main{
 
-}
 
 main h1{
     
@@ -193,7 +191,7 @@ main+main section{
 /*footer*/
 footer{
      margin-bottom:0;
-    background-color:rgb(228, 59, 29);
+    background-color:#de750a;
     border-radius: 5px;
     color:royalblue;
     height:20vh;
